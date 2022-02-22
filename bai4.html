@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 4 - Lab 7</title>
+    <link rel="stylesheet" href="assets/css/bai4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <main>
+        <div class="glass">
+            <table>
+                <thead>
+                    <tr>
+                    <th>ID</th>
+                    <th>Tên</th>
+                    <th>Năm</th>
+                    <th>Màu sắc</th>
+                    <th>Patone value</th>
+                    </tr>
+                </thead>
+                <tbody>
+        
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+</body>
+<script>
+    $(document).ready(function(){
+        fetch('https://reqres.in/api/products?page=1&per_page=5')
+        .then(response => response.json())
+        .then(data => {
+            data.data.map((item)=> {
+                $("tbody").append(
+                    `<tr style="line-height: 40px;">
+                        <td>${item.id}</td>
+                        <td>${item.name}</td>
+                        <td>${item.year}</td>
+                        <td><span style="background-color:${item.color};padding: 10px; margin: 20px;">${item.color}</span></td>
+                        <td>${item.pantone_value}</td>
+                    </tr>
+                `);
+            })
+        });
+    });
+</script>
+</html>

@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 2 - Lab 7</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/bai1.css">
+</head>
+<body>
+    <div class="app">
+        <div class="box1">
+            <div class="span">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+            </div>
+            <div class="span">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+            </div>
+        </div>
+
+        <div class="box2">
+            <p id="line1">Line 2 Lorem ipsum dolor sit amet, consecteturadipisicing elit</p>
+            <p class="line2">Line 3 Lorem ipsum dolor sit amet, consecteturadipisicing elit</p>
+            <p line-count="line3">Line 4 Lorem ipsum dolor sit amet,consectetur adipisicing elit</p>
+            <p selectedLine >Line 5 Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        </div>
+
+        <div class="box3">  
+            <ul>
+                <li>li 1</li>
+                <li>li 2</li>
+                <li>li 3</li>
+                <li>li 4</li>
+                <li>li 5</li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+<script>
+    $("span").css('color', 'red');
+
+    $("#line1").css('color', 'blue');
+
+    $(".line2").css('color', 'green');
+
+    $("[line-count = 'line3']").css('color', 'orange');
+
+    $("[selectedLine]").css('color', 'cyan');
+
+    // $("li:first-child").css('color', 'lime');
+
+    // $("li:last-child").css('color', 'lime');
+
+    // $("li:even").css('color', 'red');
+
+    // $("li").hover(function(){
+    //     $(this).css("color", "red");
+    // }, function(){
+    //     $(this).css("color", "black");
+    // });
+</script>

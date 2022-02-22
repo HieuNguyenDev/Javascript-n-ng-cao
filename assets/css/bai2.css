@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+#myEmail {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+#myEmail h1 {
+  width: 240px;
+  display: inline;
+  padding: 10px 0;
+  color: #71be34;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #555 !important;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+}
+
+/* Hidden arrow input number */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.login-div {
+  width: 450px;
+  min-height: 300px;
+  padding: 60px 35px 35px 35px;
+  border-radius: 40px;
+  background-color: #ecf0f3;
+  box-shadow: 6px 6px 20px #cbced1, -6px -6px 20px #fff;
+}
+
+.login-div .title {
+  text-align: center;
+  font-size: 28px;
+  padding-top: 24px;
+  letter-spacing: 0.5px;
+}
+
+.login-div .form {
+  width: 100%;
+  padding: 75px 5px 5px 5px;
+}
+
+.login-div .form input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  color: #555;
+  padding: 15px 10px 15px 5px;
+}
+.login-div .form .box-form {
+  margin-bottom: 30px;
+  border-radius: 25px;
+  padding-left: 20px;
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+}
+
+.box-checkmark-email {
+  position: relative;
+  padding: 20px;
+  background: #71be34;
+  border-radius: 50%;
+}
+
+.checkmark-email {
+  font-size: 58px;
+  color: #fff !important;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+}
+
+.box-error {
+  margin-bottom: 30px;
+  border-radius: 25px;
+  padding-left: 20px;
+}
+
+.login-div .form .last-box-form {
+  margin-bottom: 30px;
+  border-radius: 25px;
+}
+
+.login-div .form .ion-icon {
+  height: 22px;
+  margin: 0 10px -3px 25px;
+}
+
+.login-div .last-box-form button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height: 60px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  text-align: center;
+  background-color: #02c8db;
+  box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #fff;
+}
+
+.login-div .last-box-form button:hover {
+  opacity: 0.7;
+}
+
+#errMsg {
+  color: #ff9494 !important;
+  text-align: center;
+}
+
+.icon-warn {
+  padding-right: 8px;
+  color: #ff9494;
+}
+/* Bài 3 */
+.list-students {
+  list-style: none;
+  margin-top: 20px;
+  /* border: solid 1px #ccc; */
+  border-radius: 10px;
+  padding-left: 20px;
+}
+
+.list-students li {
+  padding: 10px 0;
+}
